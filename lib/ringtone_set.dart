@@ -38,6 +38,13 @@ class RingtoneSet {
 
     return result;
   }
+  
+  static Future<String> setRingtoneFile(String path) async {
+    final String result =
+        await _channel.invokeMethod('setRingtone', {"path": path});
+
+    return result;
+  }
 
   static Future<String> setNotification(String asset) async {
     final path =
