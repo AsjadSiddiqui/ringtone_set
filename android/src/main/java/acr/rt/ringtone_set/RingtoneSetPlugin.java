@@ -96,9 +96,9 @@ public class RingtoneSetPlugin implements FlutterPlugin, MethodCallHandler {
             ContentValues values = new ContentValues();
             values.put(MediaStore.MediaColumns.DATA, mFile.getAbsolutePath());
             values.put(MediaStore.MediaColumns.TITLE, "KolpacinoRingtone");
-            values.put(MediaStore.MediaColumns.MIME_TYPE, "audio/mp3");
+            values.put(MediaStore.MediaColumns.MIME_TYPE, "audio/mpeg");
             values.put(MediaStore.MediaColumns.SIZE, mFile.length());
-            values.put(MediaStore.Audio.Media.ARTIST, "Kolpaçino Sesleri");
+            values.put(MediaStore.Audio.Media.ARTIST, "Asjad");
             values.put(MediaStore.Audio.Media.IS_RINGTONE, !isNotif);
             values.put(MediaStore.Audio.Media.IS_NOTIFICATION, isNotif);
             values.put(MediaStore.Audio.Media.IS_ALARM, true);
